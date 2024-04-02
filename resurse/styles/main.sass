@@ -1,0 +1,94 @@
+$bg: #0a91ff
+$text2: #000000
+$text: #ffffff 
+$hl: #1f0aff
+$bord: #0affcf
+
+
+nav ul
+        list-style-type: none
+        background-color: $text
+        margin: 0
+        padding: 25px
+
+nav ul li
+            padding: 0 25px
+            position: relative  
+            display: inline-block
+
+nav ul li a
+                text-decoration: none
+                font-weight: 600
+                color: $bg
+
+nav ul li a
+  width: 100%
+  display: block
+  text-decoration: none
+  color: $bg
+  transition: color 0.3s ease
+
+nav ul li:hover > a
+  color: $text2
+
+nav ul ul
+  z-index: 10
+  position: absolute
+  top: 100%
+  left: 0
+  width: 0
+  height: 0
+  opacity: 0
+  overflow: visible
+  transition:  all 1s ease
+  height: 100
+  width: 100
+
+nav ul ul li
+  display: block
+
+nav ul ul li a
+  padding: 10px 20px
+  background-color: $text2
+  color: $text
+  transition: color 0.3s ease
+
+nav ul li:first-child span
+  opacity:0
+nav ul li:first-child:hover span
+  transition: opacity 0.5s ease
+  opacity: 1
+nav ul ul li:hover > a
+  color: $bg
+  
+  
+
+
+
+nav ul li:hover > ul
+  width: 200px
+  height: auto
+  opacity: 1
+
+// Media queries pentru ecran mediu 
+@media only screen and (max-width: 768px)
+
+  nav
+    font-size: 0.9rem
+  nav ul li
+    display: block
+    padding: 10px
+
+  nav ul li:first-child a i
+    font-size:8px
+  
+  nav ul li:first-child:hover span
+    opacity: 0
+
+ 
+// Media queries pentru ecran mic
+@media only screen and (max-width: 576px)
+  nav
+    display: none
+
+  

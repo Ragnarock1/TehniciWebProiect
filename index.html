@@ -18,21 +18,42 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
-    <!--CSS -->
+    <!-- CSS -->
     <link rel="stylesheet" href="/resurse/styles/style.css">
-    
+    <link rel="stylesheet" href="/resurse/styles/main.css">
+
+    <!--Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">    
     <title>Magazin De Template-uri Web</title>
 </head>
 <body >
-    
+    <!-- Font Awesome-->
         <header id="header">
+            <div class="header-left">
+                <div class="hamburger" id="hamburger-toggle">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </div>
             <nav>
-                <ul class="navbar">
-                    <li class="meniu-item"><a href="/index.html">Acasa</a>    
-                    <li class="meniu-item"><a href="#best-sellers">Best Sellers</a></li>
-                    <li class="meniu-item"><a href="/catalog">Catalog</a></li>
-                    <li class="meniu-item"><a href="/about-us">About Us</a></li>
-                    <li class="meniu-item"><a href="/contact">Contact</a></li>
+                <ul>
+                    <li><a href="/index.html"><i class="fa-solid fa-home" style="font-size: 24px;"></i><span>Acasa</span></a></li> 
+                    <li>   
+                        <a href="#">Catre</a>
+                        <ul>
+                            <li><a href="/catalog">Catalog</a></li>
+                            <li><a href="/about-us">About Us</a></li>
+                            <li><a href="/contact">Contact</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#">Sectiuni</a>
+                        <ul>
+                            <li><a href="#articole">Articole</a></li>
+                            <li><a href="#best-seller">Best Seller</a></li>
+                        </ul>
+                    </li>
+                    
                 </ul>
             </nav>
         </header>
@@ -58,7 +79,7 @@
             <q>It is easier for a team to do a hard thing that really matters than to do an easy thing that doesn't really matter; audacious ideas motivate people.</q>
         </section>
         
-        <section class="articole">
+        <section class="articole" id="articole">
             <div>
                 <a href="https://www.seattlenewmedia.com/blog/importance-of-website-for-business" target="iframe1">Articol 1</a>
                 <a href="https://morningscore.io/why-is-website-important-for-business/" target="iframe1">Articol 2</a>
@@ -134,7 +155,7 @@
         <section class="site">
 
         </section>
-        <section class="best-seller">
+        <section class="best-seller" id="best-seller">
 
         </section>
         
@@ -156,5 +177,6 @@
         <small>&copy; <time datetime="2023-01-01">1 Ianuarie 2023</time>. Toate drepturile rezervate.</small>
     </footer>
     
+</script src="main.js">
 </body>
 </html>

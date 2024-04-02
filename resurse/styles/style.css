@@ -15,30 +15,31 @@ body{
 }
 
 
-/* NAVBAR */
-
-.navbar{
-    list-style-type: none;
-    display: grid;
-    grid: auto-flow dense/ 0.5fr 0.5fr 3.5fr 0.5fr 0.5fr;
-    background-color: var(--text);
-    margin: 0;
-    padding: 25px;
-}
-
-.meniu-item{
-    padding: 0 25px;
-}
-.meniu-item a{
-    text-decoration: none;
-    font-weight: 600;
-    color: var(--bg);
-
-}
-
 
 
 /* MAIN */
+
+.hamburgher {
+    cursor: pointer;
+    display: none;
+    margin: 0;
+    padding: 0;
+}
+
+.bar {
+    display: none;
+    margin: 4px;
+    transition: all 0.3s ease-in-out;
+    width: 22px;
+    height: 3px;
+    background-color: var(--text);
+}
+
+.open {
+    display: flex;
+    height: auto;
+    min-height: 35vh;
+}
 
 .wrapper {
     display: grid;
@@ -147,10 +148,31 @@ tfoot td {
     font-style: italic;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 576px) {
     .table-container {
         border: 1px solid #ddd;
     }
+    .hamburgher{
+        display: inline-block;
+    }
+    .bar{
+        display: block;
+    }
+    .hamburger.active .bar:nth-child(2) {
+        opacity: 0;
+    }
+    
+    .hamburger.active .bar:nth-child(1) {
+        transform: translateY(9px) rotate(45deg);
+    }
+    
+    .hamburger.active .bar:nth-child(3) {
+        transform: translateY(-5.5px) rotate(-45deg);
+    }
+    .open{
+        display: block !important;
+    }
+    
 }
 
 .statistici {
