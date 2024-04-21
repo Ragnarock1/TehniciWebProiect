@@ -1,0 +1,25 @@
+{
+    "cale_baza": "/resurse/erori",
+    "eroare_default": {
+      "titlu": "Eroare",
+      "text": "A apărut o eroare.",
+      "imagine": "default_error.jpg"
+    },
+    "info_erori": [
+      {
+        "identificator": 404,
+        "status": true,
+        "titlu": "Pagina nu a fost găsită",
+        "text": "Ne pare rău, pagina căutată nu a putut fi găsită.",
+        "imagine": "/error_404.jpg"
+      },
+      {
+        "identificator": 500,
+        "status": true,
+        "titlu": "Eroare internă a serverului",
+        "text": "A apărut o eroare internă a serverului.",
+        "imagine": "/error_500.jpg"
+      }
+    ]
+  }
+  
